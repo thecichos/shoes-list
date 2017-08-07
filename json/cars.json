@@ -1,0 +1,29 @@
+[
+  {
+    "make": "Ford",
+    "models": [
+      "Smax",
+      "Mustang",
+      "Mondeo",
+      "Fiesta",
+      "Ka"
+    ]
+  },
+  {
+    "make": "Mazda",
+    "models": [
+      "MX-5"
+    ]
+  }, {
+    "make": "Fiat",
+    "models": [
+      "500"
+    ]
+  }, {
+    "make": "volkswagen",
+    "models": [
+      "up",
+      "polo"
+    ]
+  }
+]
