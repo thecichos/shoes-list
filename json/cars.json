@@ -1,29 +1,69 @@
 [
   {
     "make": "Ford",
-    "models": [
-      "Smax",
-      "Mustang",
-      "Mondeo",
-      "Fiesta",
-      "Ka"
-    ]
+    "model": "Smax"
+  },
+  {
+    "make": "Ford",
+    "model": "Cmax"
+  },
+  {
+    "make": "Ford",
+    "model": "Mustang"
+  },
+  {
+    "make": "Ford",
+    "model": "Mondeo"
+  },
+  {
+    "make": "Ford",
+    "model": "Fiesta"
+  },
+  {
+    "make": "Ford",
+    "model": "Ka"
   },
   {
     "make": "Mazda",
-    "models": [
-      "MX-5"
-    ]
-  }, {
+    "model": "MX-5"
+  },
+  {
     "make": "Fiat",
-    "models": [
-      "500"
-    ]
-  }, {
-    "make": "volkswagen",
-    "models": [
-      "up",
-      "polo"
-    ]
+    "model": "500"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Up"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Polo"
+  },
+  {
+    "make": "Toyota",
+    "model": "Supra"
+  },
+  {
+    "make": "Kia",
+    "model": "Cee'd"
+  },
+  {
+    "make": "Dacia",
+    "model": "Duster"
+  },
+  {
+    "make": "Porcshe",
+    "model": "911"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf gti"
+  },  {
+    "make": "Tesla",
+    "model": "Model s"
   }
 ]
