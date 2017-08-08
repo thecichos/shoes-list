@@ -17,6 +17,16 @@ Shoes.app width: 600 do
 
   fileParsed = loadJson(file)
 
+  interval_value = 0
+  while interval_value != fileParsed.length
+    if fileParsed[interval_value]["engine"]
+      puts fileParsed[interval_value]["engine"]
+    else
+      puts fileParsed[interval_value]["make"] << " " << fileParsed[interval_value]["model"] << " needs a engine size"
+    end
+    interval_value = interval_value + 1
+  end
+
 
 stack do
   def generate_make_list fileParsed, make_list

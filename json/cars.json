@@ -1,7 +1,8 @@
 [
   {
     "make": "Ford",
-    "model": "Smax"
+    "model": "Smax",
+    "engine": "2.0l diesel"
   },
   {
     "make": "Ford",
