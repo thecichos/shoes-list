@@ -22,7 +22,7 @@ Shoes.app width: 600 do
     if fileParsed[interval_value]["engine"]
       puts fileParsed[interval_value]["engine"]
     else
-      puts fileParsed[interval_value]["make"] << " " << fileParsed[interval_value]["model"] << " needs a engine size"
+
     end
     interval_value = interval_value + 1
   end
