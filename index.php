@@ -15,6 +15,7 @@ if ($_GET) {
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/_main.css">
+  <script src="js/_main.js"></script>
     <title>cars list</title>
   </head>
   <body>
@@ -42,11 +43,6 @@ if ($_GET) {
           print_r("</tr>");
         }
        ?>
-       <script>
-        $(document).ready(function() {
-          $("table").append("<tr><td><input type=text value='please enter make of car'></td><td><input type=text value='please enter model of car'></td><td><input type=text value='please enter engine size of car'></td><td><input type=button value='commit change'></tr>")
-        });
-       </script>
      </table>
     </div>
   </body>
