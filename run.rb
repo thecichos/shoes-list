@@ -2,11 +2,21 @@ require "rubygems"
 require "json"
 require "green_shoes"
 require "unicode"
+require "net/http"
+require "uri"
 
 
 Shoes.app width: 600 do
 
+  def open url
+    return Net::HTTP.get(URI.parse(url))
+  end
+
+  url = "http://localhost/shoes-list/index.php?getHash=true"
+
   file = File.read("json/cars.json")
+
+  hash = open(url)
 
   def loadJson file
     return JSON.parse(file)
@@ -134,6 +144,24 @@ stack margin: 10 do
 
       end
     end
+  end
+
+  animate 0.5 do
+    tempHash = open(url)
+    if tempHash != hash
+      tempFile = 
+      if file == tempFile
+
+      else
+        file = tempFile
+        fileParsed = loadJson(tempFile)
+        generate_make_list(fileParsed, make_list)
+      end
+    end
+
+
+
+
   end
 
 end

@@ -1,0 +1,16 @@
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+table tr {
+  height: 20px;
+}
+table tr td {
+  width: 125px;
+  border-left: 1px solid black;
+  margin: 0;
+  padding: 2px;
+
+}

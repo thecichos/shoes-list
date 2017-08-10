@@ -1,3 +1,9 @@
+<?php
+$getHash = $_GET["getHash"];
+if ($getHash == true) {
+  exit(md5_file("json/cars.json"));
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,24 +12,10 @@
   src="http://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/_main.css">
     <title>cars list</title>
   </head>
   <body>
-    <style media="screen">
-      * {
-        user-select: none;
-      }
-      table tr {
-        height: 20px;
-      }
-      table tr td {
-        width: 125px;
-        border-left: 1px solid black;
-        margin: 0;
-        padding: 2px;
-
-      }
-    </style>
     <table>
       <tr>
         <td><b>make</b></td>
@@ -33,9 +25,9 @@
       </tr>
     <?php
       $file = file_get_contents("json/cars.json");
-      $fileParsed = json_decode($file, true);
-      for ($i=0; $i < count($fileParsed) ; $i++) {
 
+      $fileParsed = jsonLoad::__loadAndParse($file);
+      for ($i=0; $i < count($fileParsed) ; $i++) {
         print_r("<tr>");
         print_r("<td><input type='text' value=".$fileParsed[$i]['make']." disabled></td>");
         print_r("<td><input type='text' value=".$fileParsed[$i]['model']." disabled></td>");
@@ -55,3 +47,18 @@
    </table>
   </body>
 </html>
+
+<?php
+  /**
+   *
+   */
+  class jsonLoad
+  {
+
+    function __loadAndParse($file)
+    {
+      return json_decode($file, true);
+    }
+  }
+
+ ?>
